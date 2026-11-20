@@ -27,200 +27,396 @@
         font-family: "Segoe UI", system-ui, -apple-system, sans-serif; font-size: 16px; line-height:1.7; }
   .en h1 { font-size: 1.3rem; }
   footer { margin-top: 48px; color: var(--muted); font-size: .9rem; text-align:center; }
+
+  table { border-collapse: collapse; width:100%; margin:1em 0; font-size:.95em; display:block; overflow-x:auto; }
+  th, td { border:1px solid var(--line); padding:.45em .6em; text-align:start; vertical-align:top; }
+  th { background:#f1f4f2; }
+  .lang { margin:0 0 1.2em; font-size:.95em; }
 </style>
 </head>
 <body>
 <main>
+<p class="lang"><a href="#english">English version</a></p>
 <article>
-<h1>سياسة الخصوصية وشروط الاستخدام — تطبيق «وِرد» لحفظ القرآن الكريم</h1>
-<p>آخر تحديث: <strong>٢٤ سبتمبر ٢٠٢٦</strong>.</p>
-<blockquote>
-<p>هذه وثيقة واحدة تجمع سياسة الخصوصية وشروط الاستخدام معًا، لأن التطبيق في هذه المرحلة يخدم
-جهة واحدة أو عددًا محدودًا من الجهات (حلقات/مساجد) لا شركة مستقلة بشروط تجارية معقدة. تصف كل
-فقرة أدناه ما هو مطبَّق فعليًا في قاعدة البيانات والتطبيق اليوم — لا وعودًا مستقبلية ولا صياغة
-تسويقية.</p>
-</blockquote>
+<h1>سياسة الخصوصية وشروط الاستخدام: تطبيق «وِرد»</h1>
+<p><strong>قبل النشر، يملأ المالك هذه الخانات (كلها بين أقواس مربعة في النص):</strong></p>
+<table>
+<thead>
+<tr>
+<th>الخانة</th>
+<th>المعنى</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>إياد العمري</code></td>
+<td>الاسم القانوني للجهة أو الشخص المشغِّل للتطبيق</td>
+</tr>
+<tr>
+<td><code><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></code></td>
+<td>بريد التواصل العام للخصوصية والدعم</td>
+</tr>
+<tr>
+<td><code>الاتحاد الأوروبي (فرانكفورت، ألمانيا)</code></td>
+<td>منطقة الخادم الفعلية لمشروع الإنتاج (مثل: الاتحاد الأوروبي)</td>
+</tr>
+<tr>
+<td><code>HTD (فلسطين)</code></td>
+<td>مزوّد الرسائل النصية بعد اختياره</td>
+</tr>
+<tr>
+<td><code>Google (نموذج Gemini)</code></td>
+<td>مزوّد النموذج اللغوي الذي يستعمله مساعد «هُدهُد» في الإنتاج</td>
+</tr>
+<tr>
+<td><code>٣٠</code></td>
+<td>مدة بقاء النسخ الاحتياطية عند مزوّد الاستضافة</td>
+</tr>
+<tr>
+<td><code>٩٠</code></td>
+<td>مدة بقاء سجل الرسائل النصية المرسلة</td>
+</tr>
+</tbody></table>
+<p>آخر تحديث: <strong>٢٠ نوفمبر ٢٠٢٦</strong>. يسري هذا النص مع صدور النسخة التي يكون الدخول فيها برقم الهاتف وكلمة المرور.</p>
+<p>وثيقة واحدة تجمع الخصوصية والشروط. كل ما فيها مطبَّق فعلًا في التطبيق والخادم، وما لم يُبنَ بعد
+ذُكر صراحةً أنه لم يُبنَ.</p>
 <hr>
 <h2>سياسة الخصوصية</h2>
-<h3>١. ما الذي نجمعه</h3>
+<h3>١. من نحن</h3>
+<p>«وِرد» تطبيق لمتابعة حفظ القرآن الكريم داخل الحلقات والمراكز. المشغِّل هو <strong>إياد العمري</strong>.
+الحسابات لا تُفتح إلا بدعوة من مركز، ولا يوجد تسجيل عام. بيانات كل مركز تخصّه، والمشغِّل يحفظها
+باسمه ولغرض تشغيل التطبيق فقط.</p>
+<h3>٢. ما الذي نجمعه</h3>
+<p><strong>الحساب والدخول</strong></p>
 <ul>
-<li><strong>رمز دخول ورمز سري</strong> (كلٌّ منهما من ٦ أرقام) لكل حساب، وهما وسيلة تسجيل الدخول الوحيدة. يُحفَظ
-الرمز السري مشفَّرًا تشفيرًا أحادي الاتجاه (hash) على الخادم، ولا يُحفَظ بصيغته الأصلية أبدًا.</li>
-<li><strong>أرقام الهواتف</strong> لأولياء الأمور وطاقم الجهة — اختيارية، للتواصل فقط، وليست وسيلة لتسجيل الدخول؛
-لا تُرسَل أي رسائل نصية (SMS) من التطبيق.</li>
-<li><strong>الأسماء الكاملة</strong> لكل حساب، بما في ذلك أسماء الأطفال (الطلاب).</li>
-<li><strong>حسابات الطلاب</strong> — يُنشئها طاقم الجهة (المشرف أو مدير الجهة)، ولا يُطلَب من الطالب أي رقم هاتف أو
-بريد إلكتروني خاص به.</li>
-<li><strong>سجلات الحضور</strong> لكل جلسة حلقة (حاضر/غائب/معذور) وتوقيت تسجيلها ومن سجّلها.</li>
-<li><strong>سجلات أخطاء التسميع المباشر ودرجاته</strong> — نوع كل خطأ ومكانه في الآية والدرجة النهائية للجلسة.</li>
-<li><strong>الواجبات المسندة وحالات إنجازها</strong> (لم يبدأ/قيد الإنجاز/مكتمل).</li>
-<li><strong>نصوص الرسائل والصور والتسجيلات الصوتية</strong> المتبادلة بين ولي الأمر والمشرف داخل محادثة واحدة
-لكل طالب.</li>
-<li><strong>موضع القراءة الأخير في المصحف والإشارات المرجعية (bookmarks)</strong>، وإحصاءات المشاركة في لوحة
-الصدارة — <strong>فقط إذا فعّلت الجهة (مدير الجهة تحديدًا) هذه الميزة صراحةً لجهتها</strong>؛ هذه الميزة
-معطّلة افتراضيًا لكل جهة تُنشأ على المنصة، ولا يوجد أي مسار برمجي يُفعّلها تلقائيًا أو
-بشكل جماعي لعدة جهات دفعة واحدة.</li>
+<li><strong>رقم الهاتف</strong>: هو اسم الدخول، ويُحفظ بصيغة موحَّدة. الرقم لا يتغيّر بعد التفعيل إلا بتدخل يدوي من
+إدارة المنصة.</li>
+<li><strong>كلمة المرور</strong>: يختارها صاحب الحساب وحده. لا تُحفظ نصًّا، بل تُحفظ مُجزَّأة تجزئة أحادية
+الاتجاه (hash) مع سرٍّ يملكه الخادم. لا أحد في المركز ولا في المنصة يرى كلمة المرور أو يعيّنها.
+كلمة المرور المؤقتة في الدعوة يولّدها الخادم ولا يراها الداعي.</li>
+<li><strong>الاسم الكامل</strong> (بأجزائه الأربعة حيث وُجد).</li>
+<li><strong>معرّف جهاز عشوائي</strong> يحفظه التطبيق في التخزين الآمن للهاتف، ولا يحفظ الخادم منه إلا قيمة مُجزَّأة.
+يُستعمل لمعرفة الأجهزة التي سبق الدخول منها، فيُطلب رمز تحقق عند أول دخول من جهاز جديد.</li>
+<li><strong>رمز الإشعارات</strong> (FCM لأندرويد، وAPNs عبر Firebase لآيفون) إن سُمح بالإشعارات.</li>
+<li><strong>الدعوات</strong>: من دعا ومن دُعي، ونوع الدعوة، وحالتها.</li>
 </ul>
-<p>نحن لا نجمع بيانات دفع أو معلومات مالية (لا يوجد اشتراك أو شراء داخل التطبيق في هذه المرحلة)،
-ولا نجمع موقع GPS (لا ميزة تعتمد على الموقع الجغرافي في هذا التطبيق).</p>
-<h3>٢. من يستطيع رؤية ماذا</h3>
-<p>يصف هذا القسم، بلغة واضحة، النموذج الفعلي المطبَّق في قاعدة البيانات (عبر Row-Level Security
-في Supabase) منذ المرحلة صفر من بناء هذا التطبيق — وليس وعدًا مستقبليًا:</p>
+<p><strong>الرسائل النصية القصيرة (SMS)</strong>
+تُرسَل رسالة في حالات محدودة فقط: دعوة تحمل كلمة مرور مؤقتة، ورمز تحقق عند «نسيت كلمة المرور؟»،
+ورمز تحقق عند الدخول من جهاز جديد. تُرسَل عبر مزوّد رسائل هو <strong>HTD (فلسطين)</strong>، فيستلم رقم
+الهاتف ونص الرسالة لإيصالها. لا نرسل رسائل دعائية.</p>
+<p><strong>بيانات الحلقة</strong></p>
 <ul>
-<li><strong>ولي الأمر</strong> يرى بيانات أبنائه المرتبطين به فقط — لا يرى بيانات أي طالب آخر.</li>
-<li><strong>المشرف</strong> يرى بيانات الطلاب في حلقته/تراكه المُسنَد إليه رسميًا من قِبل مدير جهته فقط.</li>
-<li><strong>مدير الجهة</strong> يرى بيانات جهته فقط — لا يرى بيانات جهة أخرى مطلقًا.</li>
-<li><strong>المشرف العام للمنصة (Super Admin)</strong> يستطيع الاطلاع على بيانات كل الجهات، <strong>لغرض تشغيل
-المنصة ودعمها الفني فقط</strong> — هذه حقيقة بنيوية قائمة فعليًا في تصميم قاعدة البيانات منذ
-البداية، وليست إفصاحًا جديدًا أو صلاحية أُضيفت لاحقًا؛ وهي ضرورية لدعم الجهات وحل المشاكل
-ولإعداد تقارير تشغيلية مجمّعة لا تُعرض علنًا لأحد خارج طاقم المنصة.</li>
+<li>حضور كل جلسة (حاضر، غائب، معذور) ووقت تسجيله ومن سجّله.</li>
+<li>التسميع: نوع كل خطأ ومكانه في الآية والعلامات والدرجة.</li>
+<li>الواجبات وحالة إنجازها.</li>
+<li>تنبيهات المشرف إلى حلقة كاملة.</li>
+<li>الإشعارات التي أُرسلت إلى الحساب.</li>
 </ul>
-<h3>٣. بيانات الأطفال — بوضوح تام</h3>
+<p><strong>المحادثات</strong>
+نصوص وصور يتبادلها مشرف مع طالب أو ولي أمر داخل المركز نفسه. الصور تُلتقط بالكاميرا أو تُختار من
+المعرض بإذن من صاحب الجهاز، وتُحفظ على الخادم. لا توجد رسائل صوتية. يمكن لأي مشارك في المحادثة
+الإبلاغ عن رسالة (انظر القسم ٧).</p>
+<p><strong>القراءة والفوائد</strong>
+موضع القراءة الأخير والإشارات المرجعية وتقدّم الختمة، وما يعلّمه الحساب من مقالات «الفوائد»
+بالإعجاب أو الحفظ أو القراءة. وإحصاءات لوحة الصدارة <strong>فقط إذا فعّلها مدير المركز لمركزه</strong>؛ هي معطّلة
+افتراضيًا.</p>
+<p><strong>مساعد «هُدهُد»</strong>
+ميزة للمشرفين فقط، ولا تعمل إلا في مركز فُعّلت له. الأسئلة المكتوبة أو المنطوقة تُحفظ مع إجابتها على
+الخادم (انظر القسم ٦).</p>
+<p><strong>سجلات التشغيل</strong>
+تسجّل الخوادم عناوين الشبكة (IP) وأوقات الطلبات كما يفعل أي استضافة، ويُستعمل بعضها للحد من المحاولات
+الخاطئة. تُسجَّل كذلك الرسائل النصية المرسلة (الرقم، ونوع الرسالة، ونجاحها).</p>
+<p><strong>ما لا نجمعه</strong>: بيانات دفع، أو موقعًا جغرافيًا، أو جهات اتصال الهاتف، أو معرّف الإعلانات. لا توجد
+إعلانات في التطبيق، ولا نتتبع المستخدمين عبر تطبيقات أخرى، ولا نبيع بيانات.</p>
+<h3>٣. من يستطيع رؤية ماذا</h3>
+<p>تُطبَّق القواعد في قاعدة البيانات نفسها (Row-Level Security)، لا في واجهة التطبيق فقط.</p>
 <ul>
-<li><strong>لا يُنشئ الطالب حسابه بنفسه أبدًا.</strong> حسابات الطلاب يُنشئها طاقم الجهة فقط (المشرف أو مدير الجهة)،
-ويتحقق الخادم من هذه الصلاحية في كل مرة — لا يوجد أي مسار يُنشئ فيه الطالب حسابه، ولا يقدّم
-الطالب أي معلومة تواصل خاصة به (رقم هاتف، بريد إلكتروني) للتطبيق مباشرة على الإطلاق.</li>
-<li><strong>الرمز السري لحساب الطالب</strong> يُسلَّم للطالب ولولي أمره عند إنشاء الحساب، ويُحفَظ على الخادم مشفَّرًا
-فقط؛ ويمكن لطاقم الجهة إعادة تعيينه عند الحاجة، ويمكن لصاحب الحساب تغييره من داخل التطبيق.</li>
-<li>بيانات الطفل (الحضور، درجات التسميع، الواجبات) تظهر فقط لولي أمره ولمشرف حلقته ولمدير جهته
-وللمشرف العام للمنصة، وفق النموذج الوارد في القسم ٢ أعلاه تمامًا — لا يُعرض أي من هذه البيانات
-علنًا أو لأي طرف آخر.</li>
-<li>ميزة لوحة الصدارة، إن فعّلتها الجهة، تُظهر فقط ما يقرره مستوى النطاق الذي يختاره مدير الجهة
-(على مستوى الحلقة مثلًا)، ولا تُظهر أبدًا بيانات طالب من جهة أخرى.</li>
+<li><strong>ولي الأمر</strong> يرى بيانات أبنائه المرتبطين به فقط. الارتباط لا يتم إلا بدعوة من مشرف الطالب أو من
+مدير المركز، ويقبلها ولي الأمر صراحةً، ولا يرى قبل القبول إلا اسم الطفل وحلقته. وليّ الأمر يقرأ ويراسل،
+ولا يعدّل بيانات الطفل ولا كلمة مروره.</li>
+<li><strong>المشرف</strong> يرى طلاب حلقته التي أسندها إليه مدير المركز.</li>
+<li><strong>مدير المركز</strong> يرى بيانات مركزه فقط، ولا يرى مركزًا آخر.</li>
+<li><strong>الطالب</strong> يرى بياناته وحلقاته وزملاء الحلقة بالقدر الذي تعرضه شاشات الطالب.</li>
+<li><strong>المشرف العام للمنصة</strong> يستطيع الاطلاع على بيانات كل المراكز لغرض التشغيل والدعم الفني ومعالجة
+البلاغات فقط.</li>
+<li><strong>المشرف المؤقت</strong>: يمكن لمشرف أن يمنح طالبًا موثوقًا إدارة جزء من جلسة، وتنتهي هذه الصلاحية بانتهاء الجلسة.</li>
 </ul>
-<h3>٤. محتوى الرسائل</h3>
+<h3>٤. بيانات الأطفال</h3>
 <ul>
-<li>تُحفَظ الرسائل طوال بقاء المحادثة بين ولي الأمر والمشرف، ولا تُحذف تلقائيًا.</li>
-<li>تظهر محتويات المحادثة (نص، صورة، تسجيل صوتي) فقط للطرفين المشاركين فيها (ولي الأمر والمشرف)،
-ولمدير جهتهما، وللمشرف العام للمنصة — وفق نفس نموذج القسم ٢. لا تُعرض أي رسالة خارج هذا
-النطاق لأي شخص آخر، ولا يوجد أي مساحة عامة أو خلاصة (feed) تُعرض فيها الرسائل.</li>
-<li>كل محادثة مرتبطة بطالب واحد محدد وطرفين محددين فقط (ولي أمر ومشرف واحد لكل منهما دور واحد في
-تلك المحادثة تحديدًا) — لا توجد ميزة تعارف أو تواصل مع أشخاص غير معروفين مسبقًا؛ المشرف نفسه
-شخص حقيقي معروف، عيّنه مدير الجهة رسميًا، لا طرف مجهول تعارف معه التطبيق بشكل عشوائي.</li>
-<li><strong>لم يُبنَ في هذه المرحلة نظام إبلاغ/حظر/مراجعة إدارية مخصص لمحتوى الرسائل</strong> — قرار واعٍ ومُسبَّب
-(وليس إغفالًا): نطاق العلاقة بين طرفي كل محادثة مغلق أصلًا (طالب واحد، ولي أمره، ومشرف واحد
-معيَّن رسميًا)، والرقابة قائمة فعلًا عبر مدير الجهة والمشرف العام للمنصة كما سبق. سيُعاد النظر
-في هذا القرار إذا كبر حجم الجهات على المنصة بما يجعل افتراض &quot;مدير الجهة يعرف الجميع أصلًا&quot; غير
-واقعي.</li>
+<li><strong>الطفل لا يفتح حسابه بنفسه.</strong> الحسابات تُنشأ بدعوة من المركز، ويتحقق الخادم من الصلاحية في كل مرة.</li>
+<li>يُدخِل طاقم المركز بيانات الطلاب: الاسم، ورقم الهاتف إن وُجد، والحضور والتسميع والواجبات. يحفظ
+المشغِّل هذه البيانات نيابةً عن المركز.</li>
+<li>طالب لا رقم هاتف له لا يسجّل الدخول، وتبقى بياناته داخل مركزه، ويتابعها ولي الأمر من حسابه.</li>
+<li>لا يقدّم الطفل بريدًا إلكترونيًا ولا موقعًا. لا إعلانات ولا تتبع.</li>
+<li>لا يتواصل الطفل إلا مع مشرفي مركزه، ولا توجد مساحة عامة ولا خلاصة رسائل ولا تعارف مع غرباء.</li>
+<li>يمكن لولي الأمر طلب الاطلاع على بيانات طفله أو تصحيحها أو حذفها عبر مدير المركز أو عبر
+<strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong> (انظر القسم ٩).</li>
+<li>التطبيق ليس موجّهًا إلى الأطفال كفئة متجرية، لكن طلاب الحلقات، ومنهم قاصرون، يستعملونه بإشراف
+مراكزهم وأولياء أمورهم.</li>
 </ul>
-<h3>٥. الاحتفاظ بالبيانات وحذفها</h3>
-<p>تُحفَظ كل البيانات المذكورة أعلاه طوال استمرار استخدام الجهة للمنصة، إذ لم يُبنَ في أي مرحلة من
-مراحل هذا التطبيق حتى الآن إجراء حذف تلقائي أو أرشفة لبيانات منتهية الصلاحية. إن رغب ولي أمر أو
-مدير جهة في حذف بيانات محددة (مثلًا عند مغادرة طالب للحلقة نهائيًا)، فالوسيلة المتاحة حاليًا هي
-التواصل المباشر عبر قناة الدعم أدناه؛ لا توجد بعد أداة حذف ذاتية داخل التطبيق نفسه.</p>
-<h3>٦. التواصل بخصوص البيانات</h3>
-<p>للاستفسار عن بياناتك أو بيانات طفلك، أو لطلب تعديلها أو حذفها، أو لأي استفسار آخر متعلق بهذه
-السياسة:</p>
-<p><strong><a href="mailto:iyad.ahmad.1997@gmail.com">iyad.ahmad.1997@gmail.com</a></strong></p>
+<h3>٥. جهات تعالج البيانات نيابةً عنا</h3>
+<p>لا نبيع البيانات ولا نشاركها لأغراض إعلانية. نستعين بمزوّدي خدمات يعالجونها لتشغيل التطبيق فقط:</p>
+<table>
+<thead>
+<tr>
+<th>الجهة</th>
+<th>ماذا تتلقى</th>
+<th>لماذا</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Supabase (استضافة قاعدة البيانات والملفات والدخول)، في <strong>الاتحاد الأوروبي (فرانكفورت، ألمانيا)</strong></td>
+<td>كل بيانات التطبيق</td>
+<td>التشغيل</td>
+</tr>
+<tr>
+<td><strong>HTD (فلسطين)</strong></td>
+<td>رقم الهاتف ونص الرسالة</td>
+<td>إرسال الدعوات ورموز التحقق</td>
+</tr>
+<tr>
+<td>Google Firebase Cloud Messaging وApple Push</td>
+<td>رمز الإشعار ونص الإشعار</td>
+<td>إيصال الإشعارات</td>
+</tr>
+<tr>
+<td>Sentry</td>
+<td>تقارير الأعطال: نوع الخطأ ونسخة التطبيق والجهاز، بعد حذف أرقام الهاتف والمعرّفات الشخصية من التقرير قبل إرساله</td>
+<td>إصلاح الأعطال</td>
+</tr>
+<tr>
+<td><strong>Google (نموذج Gemini)</strong></td>
+<td>نص سؤال المشرف، وما يسترجعه المساعد من بيانات حلقات ذلك المشرف (انظر القسم ٦)</td>
+<td>الإجابة عن الأسئلة</td>
+</tr>
+<tr>
+<td>مصادر عامة لتلاوة الآيات المسموعة وخطوط صفحات المصحف</td>
+<td>عنوان IP الجهاز وما يُطلب من ملف، بلا حساب ولا اسم</td>
+<td>تشغيل الاستماع وعرض المصحف</td>
+</tr>
+</tbody></table>
+<h3>٦. مساعد «هُدهُد» (للمشرفين)</h3>
+<ul>
+<li>يُكتب السؤال أو يُنطق. النطق يحوّله <strong>مُتعرِّف الكلام الموجود في الهاتف نفسه</strong> (أندرويد أو آيفون)
+إلى نص، وقد يعالجه مزوّد نظام التشغيل وفق سياسته. <strong>التطبيق لا يسجّل الصوت ولا يرفعه.</strong></li>
+<li>يُرسَل نص السؤال إلى النموذج اللغوي عند <strong>Google (نموذج Gemini)</strong>. يستدعي المساعد بيانات حلقات
+المشرف نفسه فقط (أسماء الطلاب والحضور والدرجات مثلًا) ويرسل منها ما يلزم للإجابة. لا يستطيع المساعد
+تعديل أي بيانات.</li>
+<li>تُحفظ الأسئلة والإجابات على الخادم لتتبّع المحادثة ومراقبة الاستعمال، وتُحذف مع حساب صاحبها.</li>
+<li>هناك حدّ يومي لعدد الأسئلة، ويمكن إيقاف الميزة لأي مركز.</li>
+<li>الإجابات آلية، وقد تُخطئ، فلا تُعامل كمرجع.</li>
+</ul>
+<h3>٧. الرسائل والإبلاغ</h3>
+<ul>
+<li>محتوى المحادثة يراه طرفاها، ومدير مركزهما، والمشرف العام للمنصة. لا توجد خلاصة عامة.</li>
+<li>كل محادثة بين مشرف في المركز وأسرة من المركز نفسه. الحسابات بدعوة فقط.</li>
+<li><strong>الإبلاغ</strong>: بالضغط المطوّل على رسالة وردت من شخص آخر يظهر «إبلاغ» مع ملاحظة اختيارية. يصل البلاغ
+إلى مدير المركز وإلى المشرف العام، ولهما حذف الرسالة أو تسجيل أنه تم الاطلاع. للمدير أيضًا إزالة أي
+عضو من المركز.</li>
+<li><strong>لا يوجد</strong> حظر شخص ولا مرشِّح كلمات. لم يُبنَ ذلك لأن المحادثات مغلقة على أفراد المركز المعروفين
+لمديره. يُعاد النظر إذا لزم.</li>
+</ul>
+<h3>٨. الاحتفاظ بالبيانات</h3>
+<ul>
+<li>تبقى بيانات الحساب والمركز ما دام الحساب أو المركز قائمًا.</li>
+<li>طلب الحذف ينفَّذ كما في القسم ٩.</li>
+<li>النسخ الاحتياطية عند مزوّد الاستضافة تُحذف بدورها وفق دورتها، خلال <strong>٣٠</strong> يومًا
+تقريبًا بعد الحذف.</li>
+<li>سجلات الرسائل النصية المرسلة (الرقم ونوع الرسالة ونجاحها) تُحذف عند حذف الحساب أو بعد
+<strong>٩٠</strong> يومًا، أيهما أسبق.</li>
+</ul>
+<p><a id="delete"></a></p>
+<h3>٩. حذف الحساب وحذف البيانات</h3>
+<p><strong>من داخل التطبيق (الطريقة الأساسية)</strong></p>
+<p>١. يُفتح «الملف الشخصي» ثم السطر الأخير «حذف الحساب».
+٢. تُعرض شاشة تذكر ما سيُحذف وأنه لا رجعة فيه.
+٣. تُدخَل كلمة المرور الحالية.
+٤. تُكتب كلمة «حذف».
+٥. يُسجَّل الطلب، ويُخرَج الحساب من كل الأجهزة فورًا ولا يعمل.</p>
+<p><strong>مهلة سبعة أيام</strong>: خلالها يؤدي تسجيل الدخول إلى سؤال «إلغاء طلب الحذف؟». الموافقة تُلغي الطلب
+ويعود الحساب كما كان. بعد سبعة أيام بلا إلغاء يُحذف الحساب نهائيًا في مهمة يومية.
+يُبلَّغ مشرفو الطالب وأولياء أمره عند طلب حذف حساب الطالب.</p>
+<p><strong>ما يُحذف</strong>: حساب الدخول والجلسات والأجهزة الموثوقة ورموز الإشعارات، والاسم ورقم الهاتف، وروابط
+أولياء الأمور والأدوار والدعوات وسجلّ الربط وفكّه، و<strong>كل محادثة كان صاحب الحساب طرفًا فيها، كاملةً
+برسائل الطرفين ومرفقاتها</strong> (المحادثة بين شخصين، فتذهب بذهاب أحدهما)، وأسئلته للمساعد، وإعجاباته
+ومحفوظاته وقراءاته في «الفوائد»، وموضع قراءته وعلاماته في المصحف، وسجلّ الإشعارات التي وصلته،
+وسجلّ الرسائل النصية المرسلة إلى رقمه. وعند حذف حساب طالب: حضوره وتسميعه وأخطاؤه وواجباته كلها،
+وتكليفه بالإشراف المؤقت. وتسميع زميل استمع إليه صاحب الحساب ولم يُعتمد بعد يُحذف، أما المعتمد فيبقى
+بلا اسم المستمع.</p>
+<p><strong>ما يبقى</strong>: ما كتبه مشرف أو مدير عن غيره يخصّ أصحابه، فيبقى مع حذف اسم كاتبه ويظهر بعبارة
+«حساب محذوف»: علامات التسميع، وتسجيل الحضور، والجلسات التي فتحها، والواجبات التي وزّعها، وتنبيهات
+الحلقة، والمراكز والحلقات التي أنشأها. أما البلاغات عن رسائل محادثاته، ومنها ما رفعه هو، فتُحذف مع
+تلك المحادثات.</p>
+<p><strong>حالات خاصة</strong></p>
+<ul>
+<li>إذا كان المدير هو المدير الوحيد لمركز فيه أشخاص آخرون: يُطلب تسليم المركز أولًا.</li>
+<li>حساب المشرف العام للمنصة لا يُحذف من داخل التطبيق؛ يُطلب حذفه عبر <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.</li>
+<li>حذف حساب ولي أمر يفكّ ارتباطه بأبنائه ولا يحذف سجلات الأبناء، فهي بيانات المركز. لحذفها يُرفع الطلب إلى
+مدير المركز أو عبر <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.</li>
+</ul>
+<p><strong>إن تعذّر الدخول إلى الحساب</strong>: يُرسَل طلب إلى <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong> بعنوان «طلب حذف حساب» مع رقم
+الهاتف المسجَّل. نتحقق بإرسال رمز إلى الرقم نفسه ثم ننفّذ الحذف خلال ٣٠ يومًا.</p>
+<h3>١٠. الأمان</h3>
+<ul>
+<li>الاتصال بين التطبيق والخادم مشفَّر (HTTPS).</li>
+<li>كلمات المرور مُجزَّأة (الفقرة ٢)، وخمس محاولات خاطئة تقفل الحساب ١٥ دقيقة.</li>
+<li>رموز التحقق صالحة ١٠ دقائق، ويُحدَّد عدد ما يُرسَل لكل رقم في الساعة واليوم.</li>
+<li>لا نضمن أمانًا مطلقًا، ويُبلَّغ من تأثّر بأي اختراق مؤثر.</li>
+</ul>
+<h3>١١. التواصل</h3>
+<p>لأي سؤال عن البيانات أو طلب تصحيح أو حذف: <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.</p>
 <hr>
 <h2>شروط الاستخدام</h2>
 <h3>١. طبيعة الخدمة</h3>
-<p>«وِرد» تطبيق لمتابعة حفظ القرآن الكريم داخل حلقات ومساجد منظَّمة (جهات)، يُستخدم من قِبل
-أولياء الأمور والمشرفين ومديري الجهات لمتابعة حضور الطلاب وتسميعهم وواجباتهم وقراءتهم — وليس
-متجرًا أو خدمة تحتوي مشتريات داخل التطبيق في هذه المرحلة.</p>
+<p>«وِرد» أداة لمراكز تحفيظ القرآن، لمتابعة الحضور والتسميع والواجبات والقراءة والتواصل بين المشرفين
+وأسر الطلاب. لا مشتريات ولا اشتراكات ولا إعلانات في التطبيق.</p>
 <h3>٢. الحسابات والمسؤولية</h3>
 <ul>
-<li>يُسجَّل الدخول إلى كل حساب برمز دخول ورمز سري؛ يتحمّل صاحب الحساب مسؤولية الحفاظ على سريتهما.</li>
-<li>حساب الطالب يُنشئه طاقم الجهة، ويبقى الطالب القاصر تحت إشراف ولي أمره؛ الرمز السري أداة حماية بسيطة
-لا بديلًا عن إشراف ولي الأمر.</li>
-<li>يلتزم كل مستخدم بعدم إرسال محتوى مسيء أو غير لائق عبر ميزة الرسائل؛ ولمدير الجهة، بصفته
-الطرف المسؤول عن الأشخاص الذين عيّنهم في جهته، صلاحية مراجعة محتوى المحادثات ضمن جهته عند
-الحاجة (القسم ٢ من سياسة الخصوصية أعلاه).</li>
+<li>لا يُفتح حساب إلا بدعوة من مركز. الدخول برقم الهاتف وكلمة المرور، وصاحب الحساب مسؤول عن سريّتها.</li>
+<li>القاصر يستعمل التطبيق بإشراف ولي أمره ومركزه. على المركز ألّا يُدخل بيانات طالب دون علم ولي أمره.</li>
+<li>يُمنع إرسال محتوى مسيء أو غير لائق، ويُمنع انتحال الشخصية. لمدير المركز والمشرف العام حذف أي
+رسالة وإزالة أي عضو، ويجوز إيقاف حساب يخالف هذه الشروط.</li>
+<li>مدير المركز مسؤول عن الأشخاص الذين يدعوهم، وعن صحة الأرقام التي يُدخلها.</li>
 </ul>
 <h3>٣. توفر الخدمة</h3>
-<p>يُبنى هذا التطبيق ويُدار بجهد فردي/فريق صغير؛ لا نضمن توفرًا متواصلاً بنسبة ١٠٠٪، وقد تحدث فترات
-صيانة أو انقطاع دون إشعار مسبق طويل. تعمل ميزات أساسية (عرض المصحف والقراءة الحرة) دون اتصال
-بالإنترنت جزئيًا عبر نسخة محلية مخزَّنة على الجهاز؛ الحضور والتسميع والرسائل والواجبات تحتاج
-اتصالًا بالإنترنت للمزامنة الفعلية مع الخادم (مع دعم محدود لمزامنة لاحقة عند انقطاع الاتصال).</p>
-<h3>٤. الدقة الدينية لمحتوى التسميع والدرجات</h3>
-<p>جدول درجات أخطاء التسميع (rubric) المستخدم حاليًا هو <strong>رقم عمل مبدئي لكل جهة</strong>، لم تتم مراجعته
-بعد مع شيخ أو مختص شرعي؛ تُعرض هذه الحقيقة
-صراحة داخل شاشة &quot;جدول الدرجات&quot; للمستخدمين أنفسهم — لا نقدّم هذا الجدول كمعيار ديني معتمد من
-المنصة.</p>
+<p>يُدار التطبيق بجهد فريق صغير. لا نضمن توفرًا دائمًا، وقد تحدث صيانة أو انقطاع. عرض المصحف يعمل جزئيًا
+دون اتصال. الحضور والتسميع والرسائل والواجبات تحتاج اتصالًا. الاستماع إلى التلاوة يحتاج اتصالًا في
+المرة الأولى لكل آية.</p>
+<h3>٤. الدقة الدينية</h3>
+<p>جدول درجات أخطاء التسميع <strong>قيمة عمل مبدئية لكل مركز</strong> ولم يُراجَع بعد مع شيخ أو مختص شرعي، وهذا
+مذكور داخل شاشة الجدول. إجابات «هُدهُد» آلية وقد تُخطئ. نص المصحف وتلاوته من مصادر منشورة، وأي خلل
+فيهما يُبلَّغ عنه عبر <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.</p>
 <h3>٥. تعديل هذه الوثيقة</h3>
-<p>قد تُحدَّث هذه الوثيقة عند تطوّر التطبيق أو ميزاته؛ سيُحدَّث تاريخ &quot;آخر تحديث&quot; أعلى الصفحة عند كل
-تعديل جوهري.</p>
+<p>قد تُحدَّث الوثيقة عند تطوّر التطبيق، ويتغيّر تاريخ «آخر تحديث» عند كل تعديل جوهري، ويُخطَر
+المستخدمون عند تغيير يمسّ بياناتهم.</p>
 
 </article>
-<article class="en" lang="en" dir="ltr">
-<h1>Privacy Policy &amp; Terms of Service — Wird (وِرد), a Quran memorization app (English summary)</h1>
-<p>Last updated: <strong>24 September 2026</strong>.</p>
-<p>This is a faithful summary of the Arabic document above — the same content, the same honesty
-about what is and is not yet built, not a marketing rewrite. The Arabic text above is the
-canonical version; this section exists for readers who prefer English.</p>
+<article class="en" lang="en" dir="ltr" id="english">
+<h1>Privacy Policy and Terms: Wird (وِرد), Quran memorization circles (English version)</h1>
+<p>Arabic reference version: <a href="privacy-policy-and-terms.md">privacy-policy-and-terms.md</a>. Deletion section anchor: #delete-en.</p>
+<p><strong>Placeholders to fill before publishing:</strong> <code>Iyad Omari</code>, <code><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></code>, <code>the European Union (Frankfurt, Germany)</code>,
+<code>HTD (Palestine)</code>, <code>Google (Gemini model)</code>, <code>30</code>, <code>90</code>.</p>
+<p>Last updated: <strong>20 November 2026</strong>. The Arabic text above is the reference version; this English
+version says the same thing.</p>
 <h2>Privacy Policy</h2>
-<p><strong>1. What we collect:</strong> a 6-digit login code and 6-digit passcode for every account — the only
-way to sign in; the passcode is stored server-side only as a one-way hash, never in plain text.
-Phone numbers for parents and staff are optional contact details, not a login method, and the
-app sends no SMS. Full names for every account, including children&#39;s. Student accounts are
-created by organization staff (a supervisor or admin), never by the student. Attendance records per circle
-session; live-recitation-evaluation mistake records and final scores; homework assignments and
-completion status; message text, photos, and voice-note recordings exchanged between one
-parent and one supervisor per enrolled student; Quran reading position, bookmarks, and
-leaderboard participation stats — <strong>only if the organization&#39;s own Admin explicitly enables the
-leaderboard feature for that organization</strong>; it ships disabled by default for every organization
-and there is no code path that turns it on in bulk or automatically. We do not collect payment
-information (no in-app purchases at this stage) or GPS location (no location-based feature
-exists in this app).</p>
-<p><strong>2. Who can see what:</strong> this describes the real, already-shipped Row-Level-Security model, not
-a future promise. A parent sees only their own linked children&#39;s data. A supervisor sees only
-the students in the circle/track they are officially assigned to by their organization&#39;s Admin.
-An Org Admin sees only their own organization&#39;s data. The platform&#39;s Super Admin can see across
-every organization, strictly for platform operation and support — a structural fact of the
-database design since Phase 0, not a newly added privilege.</p>
-<p><strong>3. Children&#39;s data, stated explicitly:</strong> a student account can only be created by that
-organization&#39;s staff (a supervisor or admin), and the server re-checks that authority on every
-request — there is no path for a student to create their own account or to provide their own
-contact information to the app directly, ever. A student&#39;s passcode is handed to the student and
-their parent at creation, is stored only as a hash, can be reset by organization staff, and can
-be changed by the account holder in the app. A child&#39;s data (attendance,
-evaluation scores, homework) is visible only to their own parent, their circle&#39;s supervisor,
-their organization&#39;s Admin, and the platform Super Admin — never shown publicly or to anyone
-outside that scope.</p>
-<p><strong>4. Messaging content:</strong> retained for as long as the conversation exists. Visible only to the
-two participants (one parent, one supervisor) plus their organization&#39;s Admin and the platform
-Super Admin, per the model in section 2 — never shown outside that scope, and there is no
-public feed of any message anywhere. <strong>No dedicated report/block/moderation-review system for
-message content has been built at this stage</strong> — a deliberate, reasoned decision, not an
-oversight: the relationship graph behind every conversation is closed by construction (one
-student, their own parent, one officially-assigned supervisor), and oversight already exists
-structurally via the Org Admin and platform Super Admin as described above. This will be
-revisited if the organization base grows large enough that &quot;the Org Admin already knows
-everyone&quot; stops being a realistic assumption.</p>
-<p><strong>5. Data retention/deletion:</strong> all data above is retained for as long as the organization
-continues using the platform — no automatic deletion or archival mechanism exists yet in any
-phase of this build. To request deletion or correction of specific data, contact us using the
-address below; there is no self-service deletion tool inside the app yet.</p>
-<p><strong>6. Contact for data requests:</strong> <strong><a href="mailto:iyad.ahmad.1997@gmail.com">iyad.ahmad.1997@gmail.com</a></strong>.</p>
+<p><strong>1. Who we are.</strong> Wird is an app for Quran memorization centres. The operator is
+<strong>Iyad Omari</strong>. Accounts exist only by a centre&#39;s invitation; there is no public sign-up. Each
+centre&#39;s data belongs to that centre and is held by the operator on its behalf to run the app.</p>
+<p><strong>2. What we collect.</strong></p>
+<ul>
+<li><em>Account:</em> phone number (the login name); a password chosen only by the account holder, stored as
+a one-way hash with a server-side secret (nobody at the centre or the platform can see or set
+it; an invitation&#39;s temporary password is generated by the server); full name; a random device id
+kept in the phone&#39;s secure storage (the server keeps only a hash, used to ask for a verification
+code on a new device); a push-notification token if notifications are allowed; invitation records.</li>
+<li><em>SMS:</em> sent only for an invitation with a temporary password, a code for a forgotten password,
+and a code on a new device, through <strong>HTD (Palestine)</strong>, which receives the phone number and
+the message text. No marketing messages.</li>
+<li><em>Circle data:</em> attendance per session, recitation results (mistake type and place, marks, score),
+homework and its status, announcements to a circle, notifications sent.</li>
+<li><em>Chat:</em> text and photos exchanged between a supervisor and a student or guardian of the same
+centre. Photos are taken with the camera or picked from the gallery with the device&#39;s permission.
+There are no voice messages.</li>
+<li><em>Reading and articles:</em> last reading position, bookmarks, khatma progress, likes/saves/reads on
+«الفوائد» articles; leaderboard statistics only if a centre&#39;s manager enabled it (off by default).</li>
+<li><em>Assistant «هُدهُد» (supervisors only):</em> questions and answers are stored on the server.</li>
+<li><em>Operating logs:</em> IP addresses and request times, as any hosting does; SMS log (number, kind,
+outcome).</li>
+<li><em>We do not collect</em> payment data, location, the phone&#39;s contacts or the advertising id. There are
+no ads, no cross-app tracking, and no sale of data.</li>
+</ul>
+<p><strong>3. Who can see what</strong> (enforced in the database by row-level security). A guardian sees only their
+linked children; the link is created only by invitation from the child&#39;s supervisor or the centre&#39;s
+manager, the guardian accepts explicitly and sees only the child&#39;s name and circle before accepting;
+a guardian reads and messages but never edits the child&#39;s data or password. A supervisor sees the
+students of the circle assigned to them. A centre manager sees only their own centre. A student sees
+their own data and what the student screens show about their circle. The platform super admin can
+see every centre, only for operation, support and handling reports. A supervisor may hand a trusted
+student part of a session; that ends with the session.</p>
+<p><strong>4. Children&#39;s data.</strong> A child never creates their own account. Centre staff enter student data
+(name, phone number if any, attendance, recitation, homework); the operator holds it on the centre&#39;s
+behalf. A student without a phone number does not log in; the guardian follows from their own
+account. A child gives no email address or location. No ads, no tracking. A child can only talk to
+supervisors of their own centre; there is no public space and no contact with strangers. A guardian
+can ask to see, correct or delete a child&#39;s data through the centre manager or <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.
+The app is not directed at children as a store category, but students of the circles, some of them
+minors, use it under the supervision of their centre and guardians.</p>
+<p><strong>5. Processors.</strong> Supabase (database, files, sign-in) in <strong>the European Union (Frankfurt, Germany)</strong>; <strong>HTD (Palestine)</strong>
+(phone number and message text); Google Firebase Cloud Messaging and Apple Push (notification token and
+text); Sentry (crash reports, with phone numbers and personal identifiers removed before sending);
+<strong>Google (Gemini model)</strong> (the assistant&#39;s question text and the data it retrieves from that
+supervisor&#39;s own circles); public sources for recitation audio and mushaf page fonts (they see the
+device&#39;s IP address and the file requested, nothing else). We do not sell data or share it for
+advertising.</p>
+<p><strong>6. Assistant «هُدهُد».</strong> Questions are typed or spoken. Speech is converted to text by the phone&#39;s
+own speech recognizer (the phone&#39;s operating-system vendor may process it under its own policy);
+<strong>the app does not record or upload audio.</strong> The question text goes to the language model at
+<strong>Google (Gemini model)</strong>, together with the data the assistant looks up in that supervisor&#39;s own
+circles (student names, attendance, scores). It cannot change any data. Questions and answers are
+stored and deleted with the account of whoever asked. There is a daily limit and a per-centre
+switch. Answers are automatic and may be wrong.</p>
+<p><strong>7. Messages and reporting.</strong> A conversation is visible to its two participants, their centre&#39;s
+manager and the platform super admin; there is no public feed. Every conversation is between a
+supervisor of a centre and a family of the same centre; accounts are by invitation only. <strong>Reporting:</strong>
+long-press a message from another person, choose «إبلاغ», add an optional note. The report goes to
+the centre&#39;s manager and the super admin, who can delete the message or mark it seen; the manager can
+also remove any member from the centre. There is <strong>no</strong> person-blocking and <strong>no</strong> word filter, because
+conversations are closed to a centre&#39;s known members. This will be revisited if needed.</p>
+<p><strong>8. Retention.</strong> Account and centre data are kept while the account or centre exists. Deletion is as
+in section 9. Backups at the hosting provider are overwritten on their own cycle, about
+<strong>30</strong> days after deletion. The sent-SMS log is removed with the account or after <strong>90</strong> days, whichever is first.</p>
+<p><a id="delete-en"></a></p>
+<p><strong>9. Deleting your account and data.</strong>
+<em>In the app:</em> Profile, then the last line «حذف الحساب»; a screen says what will go and that it
+cannot be undone; enter the current password; type the word «حذف»; the request is recorded and the
+account is signed out on every device and cannot be used. <em>Seven-day grace:</em> signing in again within
+seven days asks «Cancel the deletion request?»; agreeing cancels it. After seven days without
+cancelling, a daily job deletes the account for good. A student&#39;s supervisors and guardians are
+notified when a deletion of a student account is requested.
+<em>Deleted:</em> the sign-in account, sessions, trusted devices and push tokens; name and phone number;
+guardian links, their link/unlink history, roles and invitations; <strong>every conversation the person
+took part in, whole, with both sides&#39; messages and attachments</strong> (a conversation is between two
+people and goes with either of them); assistant questions; likes, saves and reads in «الفوائد»;
+reading position and bookmarks; the log of notifications sent to the person and of SMS sent to the
+number; and, for a student account, all attendance, recitation, mistakes and homework rows and any
+temporary-supervisor assignment. A classmate&#39;s recitation the person listened to and that was never
+confirmed is deleted; a confirmed one stays without the listener&#39;s name.
+<em>Kept:</em> what a supervisor or manager wrote about others belongs to them, so it stays with the
+author&#39;s name removed, shown as «حساب محذوف» (deleted account): recitation marks, attendance
+entries, sessions opened, homework handed out, circle announcements, and centres and circles
+created. Reports about messages in the person&#39;s conversations, including reports the person filed,
+go with those conversations.
+A manager who is the only manager of a centre with other people must hand the centre over first.
+The platform super admin&#39;s account is not deleted from inside the app; ask <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.
+Deleting a guardian account unlinks the children but does not delete the
+children&#39;s records, which are the centre&#39;s; ask the centre manager or <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong> for that.
+<em>If you cannot sign in:</em> email <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong> with the subject &quot;Account deletion request&quot; and
+the registered phone number; we verify by sending a code to that number and complete the deletion
+within 30 days.</p>
+<p><strong>10. Security.</strong> Transport is encrypted (HTTPS). Passwords are hashed; five wrong passwords lock an
+account for 15 minutes; verification codes last 10 minutes and the number sent per phone number is
+limited per hour and per day. No system is perfectly secure; we notify those affected by any
+significant breach.</p>
+<p><strong>11. Contact:</strong> <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.</p>
 <h2>Terms of Service</h2>
-<p><strong>1. Nature of the service:</strong> Wird (وِرد) is a Quran-memorization tracking tool for organized circles and
-mosques (organizations), used by parents, supervisors, and organization admins to track
-attendance, recitation evaluation, homework, and reading progress — not a storefront, and there
-are no in-app purchases at this stage.</p>
-<p><strong>2. Accounts and responsibility:</strong> every account signs in with a login code and passcode; the
-account holder is responsible for keeping both secret. A student&#39;s account is created by
-organization staff, and a minor remains under their parent&#39;s supervision; the passcode is a
-lightweight safeguard, not a substitute for parental oversight.
-Every user agrees not to send abusive or inappropriate content through the messaging feature;
-an organization&#39;s Admin, as the party responsible for the people they have assigned within their
-own organization, may review conversation content within their own organization&#39;s scope when
-needed (Privacy Policy section 2).</p>
-<p><strong>3. Service availability:</strong> this app is built and operated by an individual/small team; we do
-not guarantee 100% uninterrupted availability, and maintenance or downtime may occur without
-extensive advance notice. Core Mushaf-browsing and free-reading features work partially offline
-via an on-device local copy; attendance, evaluation, messaging, and homework need an internet
-connection to actually sync with the server (with limited support for resuming a sync after a
-connectivity gap).</p>
-<p><strong>4. Religious accuracy of recitation scoring:</strong> the mistake-scoring rubric currently in use is
-<strong>each organization&#39;s own provisional working figure</strong>, not yet reviewed with a sheikh or
-religious specialist. This fact is already shown
-explicitly to users inside the app&#39;s own &quot;Scoring Rubric&quot; screen — we do not present this rubric
-as a platform-endorsed religious standard.</p>
-<p><strong>5. Changes to this document:</strong> this document may be updated as the app or its features
-evolve; the &quot;last updated&quot; date at the top will change with any material revision.</p>
+<p><strong>1. The service.</strong> Wird is a tool for Quran memorization centres: attendance, recitation, homework,
+reading, and messaging between supervisors and students&#39; families. No purchases, subscriptions or ads.</p>
+<p><strong>2. Accounts.</strong> An account exists only by a centre&#39;s invitation. Sign-in is by phone number and
+password; the account holder keeps the password secret. A minor uses the app under the supervision of
+a guardian and a centre; a centre must not enter a student&#39;s data without the guardian&#39;s knowledge.
+Abusive or inappropriate content and impersonation are forbidden; a centre manager and the super
+admin may delete any message and remove any member, and an account that breaks these terms may be
+suspended. A centre manager is responsible for the people they invite and for the numbers they enter.</p>
+<p><strong>3. Availability.</strong> Run by a small team; no guarantee of uninterrupted service. The mushaf works
+partly offline; attendance, recitation, messages and homework need a connection; listening to
+recitation needs a connection the first time for each verse.</p>
+<p><strong>4. Religious accuracy.</strong> The recitation scoring table is each centre&#39;s provisional working figure,
+not yet reviewed by a sheikh or religious specialist, and the app says so on the table&#39;s screen. The
+assistant&#39;s answers are automatic and may be wrong. Mushaf text and recitation come from published
+sources; report any defect to <strong><a href="mailto:<a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a>"><a href="mailto:iyad.ahmad.1997@gmail.com" dir="ltr">iyad.ahmad.1997@gmail.com</a></a></strong>.</p>
+<p><strong>5. Changes.</strong> This document may be updated; the date at the top changes with any material change,
+and users are notified of a change that affects their data.</p>
 
 </article>
-<footer>iyad.ahmad.1997@gmail.com</footer>
 </main>
 </body>
 </html>
